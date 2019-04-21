@@ -1,0 +1,25 @@
+{
+  "name": "PASCAL_NAME",
+  "version": "0.0.1",
+  "description": "DESCRIPTION",
+  "repository": {
+    "type": "git",
+    "url": "REPO"
+  },
+  "cordova": {
+    "id": "CORDOVA_NAME",
+    "platforms": [
+      "PLATFORMS"
+    ]
+  },
+  "keywords": [
+     "cordova",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "ios",
+    "ionic"
+  ],
+  "author": "AUTHOR_NAME",
+  "license": "MIT"
+}

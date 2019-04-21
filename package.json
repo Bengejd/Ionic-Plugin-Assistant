@@ -1,0 +1,73 @@
+{
+  "name": "ionic-plugin-assistant",
+  "version": "0.0.1",
+  "description": "A npm package to help you get started on your first Ionic-Cordova plugin!",
+  "main": "index.js",
+  "author": "Jordan Benge <Bengejd@miamioh.edu> (@Bengejd)",
+  "license": "MIT",
+  "keywords": [
+    "Ionic",
+    "Cordova",
+    "plugin",
+    "template"
+  ],
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 80,
+    "branches": 80,
+    "include": [
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint ./src/",
+    "build:dev": "NODE_ENV=development webpack --mode=development --progress --profile --colors",
+    "build:prod": "NODE_ENV=production webpack --mode=production --progress --colors",
+    "build:test": "npm run build:dev && time IPA",
+    "test": "env testing=true nyc mocha --require @babel/register",
+    "clean": "modclean -r",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov && rm coverage.lcov"
+  },
+  "dependencies": {
+    "clg-color": "^1.1.3",
+    "inquirer": "^6.2.1",
+    "line-reader": "^0.4.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "codecov": "^3.1.0",
+    "eslint": "^5.11.1",
+    "eslint-config-google": "^0.11.0",
+    "http-server": "^0.11.1",
+    "lodash-webpack-plugin": "^0.11.5",
+    "mocha": "^5.2.0",
+    "modclean": "^3.0.0-beta.1",
+    "nyc": "^13.1.0",
+    "terser-webpack-plugin": "^1.2.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.28.3",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-deep-scope-plugin": "^1.6.0"
+  },
+  "bin": {
+    "IPA": "dist/index.js"
+  }
+}

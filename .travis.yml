@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- node
+before_deploy:
+- npm run build:prod
+- npm run clean
+after_success:
+- npm run coverage
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: Bengejdb@gmail.com
+  api_key:
+    secure: TIigE3z4FcLcnmLQwrcrWXDS/rd9JxcMA1FtZlfzYSr3gwcmyLu62n7+t1PtNr3Uo1A66RyPD5TMteWshI4SjNfrdlA1bRTcg5vpV4WbCFT8TMUVkHCscH9+tSz+w0DRkrWg78oRldYFq+P4jr4nCyNB7eSkVTaAcbzaIX8wdliDKjcALXZ2k/SAyqDis4QhfTUjCY9hGUh9SXTtxFOyop8KYkbMdmDN2+emOq4fn+OEt1KBzW6HaEHQuWtLDaR9dqmGHuycOMAyLYY+QDH1QCo0XBUWZvvBeQbfxKI7uD/BZc7ntqn6lhQ09cmiUSO3ZrCEZR4I9dnpm951rDVWul6a6N8cc4A0BTwJzKxljm1hisJDBfu0i1vKsI6DXo+3n2cZS7Z3r7dJZYgMoyEnY1226A1NQzIUjbA45n2/PF1DBxTYLaXERihLprGODhZbqYbjDYCF1zurhF5aSyO0V4BPio6OYZlylVU5Ko3iprrK1whho6dLllEkWaV082yW91lg/awzsrsbsSM/SmtaVAYsu610LiXbiqPASukh0zFOhyPvWMkkck+GRgskZ7qRE9ubGacgnvY6H60F9M6cGWtPknpqXpa/GhLk5kk/kH1YwnHfG3MNx7JDN9LlJPwcKNueffcWxVItt0Pkz+GWn5+2YZY8oKP6fi1ZRaX/ddw=
+  on:
+    branch: master
+    repo: Bengejd/NOLS

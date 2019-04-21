@@ -1,0 +1,28 @@
+{
+  "extends": "google",
+  "env": {
+    "mocha": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "no-tabs": "off",
+    "indent": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off",
+    "no-unused-vars": "warn",
+    "space-before-function-paren": "off",
+    "max-len": "off",
+    "comma-dangle": "off",
+    "keyword-spacing": "off",
+    "no-var": "off",
+    "padded-blocks": "off",
+    "no-trailing-spaces": "off",
+    "brace-style": "off"
+  }
+}
