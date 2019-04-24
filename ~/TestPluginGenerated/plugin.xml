@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="test-plugin-generated" version="0.0.1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>TestPluginGenerated</name>
+
+    <js-module name="TestPluginGenerated" src="www/PASCAL_NAME.js">
+        <clobbers target="TestPluginGenerated" />
+
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+        <!--
+        Add in any class declaration names here so that they can be accessed by Cordova. Else the plugin will fail.
+        -->
+
+                <param name="ios-package" value="TestPluginGenerated" />
+            <feature name="TestPluginGenerated">
+            </feature>
+        </config-file>
+
+
+        <!-- Add in the plugin .swift files here -->
+
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+        <source-file src="src/ios/TestPluginGenerated.swift" />
+</plugin>
+        <!-- Add in the swift-support plugin by default -->
+    </platform>

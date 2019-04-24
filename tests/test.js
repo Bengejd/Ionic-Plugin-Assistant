@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-describe('readFile(): ', () => {
+describe('namer(): ', () => {
   const readFileTests = [
     {
       input: './test/test-scss/mocha-scss/only-stylesheets/first.scss',

@@ -1,0 +1,25 @@
+{
+  "name": "TestShitThis",
+  "version": "0.0.1",
+  "description": "DESCRIPTION",
+    "type": "git",
+  "repository": {
+    "url": "REPO"
+  "cordova": {
+    "platforms": [
+    "id": "test-shit-this",
+  },
+    ]
+  },
+  "keywords": [
+     "cordova",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "ios",
+    "ionic"
+  ],
+  "author": "asdf",
+}
+      "PLATFORMS"
+  "license": "MIT"

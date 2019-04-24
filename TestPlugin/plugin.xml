@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="test-plugin" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <js-module name="TestPlugin" src="www/TestPlugin.js">
+    <name>TestPlugin</name>
+        <clobbers target="TestPlugin" />
+    </js-module>
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+        <!--
+        -->
+        Add in any class declaration names here so that they can be accessed by Cordova. Else the plugin will fail.
+
+            <feature name="TestPlugin">
+                <param name="ios-package" value="TestPlugin" />
+
+            </feature>
+        </config-file>
+        <!-- Add in the plugin .swift files here -->
+
+        <source-file src="src/ios/TestPlugin.swift" />
+        <!-- Add in the swift-support plugin by default -->
+
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+    </platform>
+</plugin>

@@ -10,19 +10,19 @@ export async function configQuestions() {
   const questions = [
     {
       name: 'PLUGIN_NAME',
-      message: 'What is your plugins name?',
+      message: 'What is your plugins name? Example: image-picker',
       type: 'input',
     },
     {
       name: 'AUTHOR_NAME',
-      message: 'What is your name?',
+      message: 'What is your name? Tip: Your github username is always a good choice.',
       type: 'input',
     },
     {
       name: 'PLATFORMS',
       message: 'What devices are you targeting?',
-      type: 'list',
-      choices: ['All', 'Android', 'Browser', 'iOS', 'Windows'],
+      type: 'checkbox',
+      choices: ['iOS', 'Android'],
     },
     {
       name: 'CONFIRM',
@@ -57,8 +57,9 @@ export function setOptions(opts) {
     global.PLUGIN_NAME = opts.PLUGIN_NAME.trim();
     global.AUTHOR_NAME = opts.AUTHOR_NAME.trim();
     global.PLATFORMS = opts.PLATFORMS;
+    global.PASCAL_NAME = '';
 
-    if (opts.CONFIRM === 'YES') resolve(opts);
+    if (opts.CONFIRM === 'YES') resolve();
     else reject('IPA Aborted: Because you did not confirm choices.');
   });
 }
