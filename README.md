@@ -61,6 +61,6 @@ If you have installed IPA from npm, then from terminal in your project directory
 ## TODO:
 - [x] Copy templates over with submitted information.
 - [ ] Optimize project code.
-- [ ] Actually create the project.
+- [ ] Create Unit Tests
 
 **Copyright © 2019 Jordan Benge**
