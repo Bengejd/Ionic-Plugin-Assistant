@@ -2,6 +2,7 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 const WebpackDeepScopeAnalysisPlugin = require('webpack-deep-scope-plugin').default;
+const CopyPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -14,6 +15,9 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin({banner: '#!/usr/bin/env node', raw: true}),
     new WebpackDeepScopeAnalysisPlugin(),
+    new CopyPlugin([
+      { from: './templates', to: 'templates/' },
+    ]),
   ],
   optimization: {
     minimizer: [new TerserPlugin(
