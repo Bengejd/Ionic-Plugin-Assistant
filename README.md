@@ -50,13 +50,20 @@ First make sure you have installed the latest version of [node.js](http://nodejs
 
 Install IPA From NPM:
 
-    npm install ipa -g
+    npm i -g ionic-plugin-assistant
     
 ## Usage
 
 If you have installed IPA from npm, then from terminal in your project directory, run the command
 
     ipa
+
+You'll then be prompted to answer a few questions about your plugin, such as:
+1. It's name (e.g: image-picker)
+2. Your name (Your github username is always a good choice).
+3. The platforms you're targeting IOS, Android of Both!
+
+Then you're all set. Your 
 
 ## TODO:
 - [x] Copy templates over with submitted information.
