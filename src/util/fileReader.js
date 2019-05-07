@@ -15,30 +15,24 @@ export function readFile(filePath) {
 
     lineReader.eachLine(filePath, (line, last) => {
       parsedFile.push(line);
-      if (last) {
-        return false;
-      }
+      if (last) return false;
     }, (err) => {
       /* istanbul ignore next */
       if (err) { // Shouldn't ever get here, but just in case.
         log.error('Ionic Plugin Asssitant encountered an error reading file: ', filePath, err);
         resolve();
+      } else {
+        resolve(parsedFile);
       }
-      resolve(parsedFile);
     });
-  }).catch(/* istanbul ignore next */ (err) => {
-  });
+  }).catch(/* istanbul ignore next */ (err) => {});
 }
 
 
 /* istanbul ignore next */
 export function writeFile(filePath, newFile) {
-  newFile.map((line) => {
-    fs.promises.mkdir(path.dirname(filePath), {recursive: true})
-      .then(() => {
-        fs.appendFileSync(filePath, line);
-        fs.appendFileSync(filePath,  '\n');
-      });
+  fs.promises.mkdir(path.dirname(filePath), {recursive: true}).then(() => {
+    return fs.appendFileSync(filePath, newFile);
   });
 }
 

@@ -65,3 +65,4 @@ jspm_packages/
 /rsoconfig.json
 coverage.lcov
 
+/dist/
