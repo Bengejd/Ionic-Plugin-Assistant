@@ -1,10 +1,14 @@
 const log = require('clg-color');
+const path = require('path');
 
 import { configQuestions } from './util/questions';
 import {readFile, getFilePaths, writeFile} from './util/fileReader';
 import {createNameVariations} from './util/namer';
 
 async function init() {
+
+  log.success('starting in: ', __dirname);
+
   try {
 
     const opts = await configQuestions();
