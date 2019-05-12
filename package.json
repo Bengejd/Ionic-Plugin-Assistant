@@ -9,7 +9,8 @@
     "Ionic",
     "Cordova",
     "plugin",
-    "template"
+    "template",
+    "ionic-plugin-generator"
   ],
   "nyc": {
     "check-coverage": true,

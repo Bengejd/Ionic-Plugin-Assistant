@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
-import { Observable } from 'rxjs/Observable';
 
 /**
  * @name PASCAL_NAME
@@ -14,14 +13,6 @@ import { Observable } from 'rxjs/Observable';
 export interface PASCAL_NAME_INTERFACE_OPTIONS {
   option?: any;
 }
-
-// @Plugin({
-//   pluginName: 'Camera',
-//   plugin: 'cordova-plugin-camera',
-//   pluginRef: 'navigator.camera',
-//   repo: 'https://github.com/apache/cordova-plugin-camera',
-//   platforms: ['Android', 'Browser', 'iOS', 'Windows']
-// })
 
 @Plugin({
   pluginName: 'PASCAL_NAME',
@@ -41,7 +32,7 @@ export class PASCAL_NAME extends IonicNativePlugin {
     successIndex: 1,
     errorIndex: 2,
   })
-  StartPASCAL_NAME(options: PLUGIN_INTERFACE_OPTIONS): Promise<any> {
+  startPlugin(options: PLUGIN_INTERFACE_OPTIONS): Promise<any> {
     return;
   }
 }

@@ -14,6 +14,11 @@ export async function configQuestions() {
       type: 'input',
     },
     {
+      name: 'PLUGIN_DESCRIPTION',
+      message: 'What does your plugin do? Try to keep your description short.',
+      type: 'input',
+    },
+    {
       name: 'AUTHOR_NAME',
       message: 'What is your name? Tip: Your github username is always a good choice.',
       type: 'input',
@@ -31,6 +36,7 @@ export async function configQuestions() {
       when(ANS) {
         log.info(`
         PLUGIN_NAME: ${ANS.PLUGIN_NAME}
+        PLUGIN_DESCRIPTION: ${ANS.PLUGIN_DESCRIPTION}
         AUTHOR_NAME: ${ANS.AUTHOR_NAME}
         PLATFORMS: ${ANS.PLATFORMS}
         `);
@@ -56,6 +62,7 @@ export function setOptions(opts) {
 
     global.PLUGIN_NAME = opts.PLUGIN_NAME.trim();
     global.AUTHOR_NAME = opts.AUTHOR_NAME.trim();
+    global.PLUGIN_DESCRIPTION = opts.PLUGIN_DESCRIPTION.trim();
     global.PLATFORMS = opts.PLATFORMS;
     global.PASCAL_NAME = '';
 

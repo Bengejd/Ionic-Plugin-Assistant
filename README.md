@@ -19,14 +19,6 @@
     <img src="https://img.shields.io/travis/Bengejd/NOLS/master.svg"
       alt="Build Status" />
   </a>
-  <!-- CodeCov -->
-  <a href="https://codecov.io/gh/Bengejd/NOLS">
-   <img src="https://codecov.io/gh/Bengejd/NOLS/branch/master/graph/badge.svg" />
-  </a>
-    <!-- GreenKeeper -->
-  <a href="https://badges.greenkeeper.io/Bengejd/NOLS.svg">
-    <img src="https://badges.greenkeeper.io/Bengejd/NOLS.svg" />
-  </a>
       <!-- License -->
   <a href="#">
     <img alt="undefined" src="https://img.shields.io/npm/l/nols.svg" />
@@ -60,14 +52,15 @@ If you have installed IPA from npm, then from terminal in your project directory
 
 You'll then be prompted to answer a few questions about your plugin, such as:
 1. It's name (e.g: image-picker)
-2. Your name (Your github username is always a good choice).
-3. The platforms you're targeting IOS, Android of Both!
+2. A short plugin description 
+3. Your name (Your github username is always a good choice).
+4. The platforms you're targeting IOS, Android of Both!
 
-Then you're all set. Your 
+Then you're all set.
 
-## TODO:
+## Ionic-Plugin-Assistant TODO:
 - [x] Copy templates over with submitted information.
 - [ ] Optimize project code.
-- [ ] Create Unit Tests
+- [ ] Create Unit Tests.
 
 **Copyright © 2019 Jordan Benge**

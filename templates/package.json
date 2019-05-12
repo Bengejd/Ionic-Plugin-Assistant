@@ -13,7 +13,10 @@
     ]
   },
   "keywords": [
-     "cordova",
+    "PASCAL_NAME",
+    "ionic-PASCAL_NAME",
+    "cordova PASCAL_NAME",
+    "cordova",
     "phonegap",
     "ecosystem:cordova",
     "cordova-ios",

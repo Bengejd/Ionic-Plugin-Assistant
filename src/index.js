@@ -16,16 +16,14 @@ async function init() {
       const templateFile = await readFile(fp.template);
       let newFile = '';
 
-      for(let i = 0; i < await templateFile.length; i++) {
+      for(let i = 0; i < templateFile.length; i++) {
         const line = await templateFile[i];
         const newLine = await line
-          .replace('PASCAL_NAME', global.PASCAL_NAME)
-          .replace('PASCAL_NAME', global.PASCAL_NAME)
-          .replace('CORDOVA_NAME', global.CORDOVA_NAME)
-          .replace('CORDOVA_NAME', global.CORDOVA_NAME)
-          .replace('AUTHOR_NAME', global.AUTHOR_NAME)
-          .replace('AUTHOR_NAME', global.AUTHOR_NAME)
-          .replace('PLATFORMS', global.PLATFORMS);
+          .replace(/PASCAL_NAME/g, global.PASCAL_NAME)
+          .replace(/CORDOVA_NAME/g, global.CORDOVA_NAME)
+          .replace(/AUTHOR_NAME/g, global.AUTHOR_NAME)
+          .replace(/DESCRIPTION/g, global.PLUGIN_DESCRIPTION)
+          .replace(/PLATFORMS/g, global.PLATFORMS);
         newFile = newFile + newLine + '\n';
       }
       writeFile(fp.path, newFile);

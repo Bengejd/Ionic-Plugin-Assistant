@@ -3,7 +3,6 @@ node_js:
 - node
 before_deploy:
 - npm run build:prod
-- npm run clean
 #after_success:
 #- npm run coverage
 deploy:
