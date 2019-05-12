@@ -7,9 +7,6 @@ import {createNameVariations} from './util/namer';
 
 async function init() {
 
-  var env = process.env.NODE_ENV || 'dev';
-  console.log(env);
-
   try {
 
     const opts = await configQuestions();
