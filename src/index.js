@@ -7,7 +7,7 @@ import {createNameVariations} from './util/namer';
 
 async function init() {
 
-  log.success('starting in: ', __dirname);
+  console.log('starting in: ', __dirname);
 
   try {
 
