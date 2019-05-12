@@ -63,16 +63,6 @@ export async function getFilePaths() {
       'template': `${__dirname}/templates/CHANGELOG.md`,
     },
     {
-      'name': 'gitignore',
-      'path': `./${global.PASCAL_NAME}/.gitignore`,
-      'template': `${__dirname}/templates/.gitignore`,
-    },
-    {
-      'name': 'xml',
-      'path': `./${global.PASCAL_NAME}/.gitattributes`,
-      'template': `${__dirname}/templates/.gitattributes`,
-    },
-    {
       'name': 'www',
       'path': `./${global.PASCAL_NAME}/www/${global.PASCAL_NAME}.js`,
       'template': `${__dirname}/templates/www/template.js`,
