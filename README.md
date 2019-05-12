@@ -46,7 +46,7 @@ First make sure you have installed the latest version of [node.js](http://nodejs
 
 Install IPA From NPM:
 
-    npm i -g ionic-plugin-assistant
+    npm i -g ionic-plugin-assistant@latest
     
 ## Usage
 
