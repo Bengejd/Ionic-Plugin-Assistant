@@ -15,7 +15,7 @@
       alt="NPM Downloads" />
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/Bengejd/NOLS">
+  <a href="https://travis-ci.org/Bengejd/Ionic-Plugin-Assistant">
     <img src="https://img.shields.io/travis/Bengejd/NOLS/master.svg"
       alt="Build Status" />
   </a>
