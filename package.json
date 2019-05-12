@@ -1,6 +1,6 @@
 {
   "name": "ionic-plugin-assistant",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "description": "A npm package to help you get started on your first Ionic-Cordova plugin!",
   "main": "index.js",
   "author": "Jordan Benge <Bengejd@miamioh.edu> (@Bengejd)",
