@@ -29,7 +29,11 @@ ________________________________________________________________________________
 
 ## Project Status
 
-IPA is currently under development.
+IPA is currently under development. 
+
+###### Looking for contributors to help with the Android templating. 
+
+######  PR's welcome!
 
 <h3>About IPA</h3>
  
