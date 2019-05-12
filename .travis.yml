@@ -3,8 +3,6 @@ node_js:
 - node
 before_deploy:
 - npm run build:prod
-#after_success:
-#- npm run coverage
 deploy:
   skip_cleanup: true
   provider: npm
