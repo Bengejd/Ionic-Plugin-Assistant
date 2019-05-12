@@ -64,6 +64,7 @@ Then you're all set.
 
 ## Ionic-Plugin-Assistant TODO:
 - [x] Copy templates over with submitted information.
+- [ ] Finish Android Templates
 - [ ] Optimize project code.
 - [ ] Create Unit Tests.
 
