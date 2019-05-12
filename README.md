@@ -29,7 +29,7 @@ ________________________________________________________________________________
 
 ## Project Status
 
-IPA is currently under development. 
+IPA is currently under development. The Android platform is incomplete, but is being actively worked on.
 
 ###### Looking for contributors to help with the Android templating. 
 
