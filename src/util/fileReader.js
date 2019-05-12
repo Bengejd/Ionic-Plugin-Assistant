@@ -13,7 +13,7 @@ export function readFile(filePath) {
   const parsedFile = [];
   return new Promise(async (resolve) => {
 
-    lineReader.eachLine(path.resolve(filePath), (line, last) => {
+    lineReader.eachLine(filePath, (line, last) => {
       parsedFile.push(line);
       if (last) return false;
     }, (err) => {

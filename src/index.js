@@ -7,8 +7,6 @@ import {createNameVariations} from './util/namer';
 
 async function init() {
 
-  console.log('starting in: ', __dirname);
-
   try {
 
     const opts = await configQuestions();
