@@ -44,7 +44,7 @@ IPA was made to make the average developers life a little easier, when wanting t
 First make sure you have installed the latest version of [node.js](http://nodejs.org/)
 (You may need to restart your computer after this step).
 
-Install IPA From NPM:
+Install the ionic-plugin-assistant From NPM:
 
     npm i -g ionic-plugin-assistant@latest
     
