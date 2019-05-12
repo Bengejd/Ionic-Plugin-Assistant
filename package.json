@@ -12,6 +12,9 @@
     "template",
     "ionic-plugin-generator"
   ],
+  "files": [
+    "/dist"
+  ],
   "nyc": {
     "check-coverage": true,
     "per-file": true,
@@ -32,6 +35,7 @@
     "build:dev": "NODE_ENV=development webpack --mode=development --progress --profile --colors",
     "build:prod": "NODE_ENV=production webpack --mode=production --progress --colors",
     "build:test": "npm run build:dev && time ipa",
+    "build:publish": "npm run build:prod && npm publish",
     "test": "env testing=true nyc mocha --require @babel/register",
     "clean": "modclean -r",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov && rm coverage.lcov"
