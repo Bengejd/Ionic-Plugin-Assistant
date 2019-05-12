@@ -20,6 +20,7 @@ async function init() {
 
       if(templateFile === null) {
         log.error('Closing IPA');
+        process.exit(1);
         throw new Error('Something wen\'t wrong');
       }
 
