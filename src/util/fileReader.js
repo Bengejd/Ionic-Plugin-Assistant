@@ -20,7 +20,7 @@ export function readFile(filePath) {
       /* istanbul ignore next */
       if (err) { // Shouldn't ever get here, but just in case.
         log.error('Ionic Plugin Asssitant encountered an error reading file: ', filePath, err);
-        resolve();
+        resolve(null);
       } else {
         resolve(parsedFile);
       }

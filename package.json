@@ -72,6 +72,6 @@
     "webpack-deep-scope-plugin": "^1.6.0"
   },
   "bin": {
-    "ipa": "dist/index.js"
+    "ipa": "src/index.js"
   }
 }

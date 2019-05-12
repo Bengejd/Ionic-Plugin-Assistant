@@ -7,6 +7,9 @@ import {createNameVariations} from './util/namer';
 
 async function init() {
 
+  var env = process.env.NODE_ENV || 'dev';
+  console.log(env);
+
   try {
 
     const opts = await configQuestions();
@@ -17,6 +20,11 @@ async function init() {
     filePaths.map(async (fp) => {
       const templateFile = await readFile(fp.template);
       let newFile = '';
+
+      if(templateFile === null) {
+        log.error('Closing IPA');
+        throw new Error('Something wen\'t wrong');
+      }
 
       for(let i = 0; i < templateFile.length; i++) {
         const line = await templateFile[i];
