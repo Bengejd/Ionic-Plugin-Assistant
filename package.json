@@ -45,7 +45,7 @@
     "inquirer": "^6.2.1",
     "line-reader": "^0.4.0",
     "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
